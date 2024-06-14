@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>ApostolMine - Лучший политический сервер Minecraft</title>
+    <link rel="stylesheet" href="../css/style2.css">
+    <script>
+        function free() {
+            window.location.href = "../sub/guide-free.html"; // Replace with your desired URL
+        }
+
+        function tobuy() {
+            window.location.href = "../sub/guide-doplata.html"; // Replace with your desired URL
+        }
+
+        function buy() {
+            window.location.href = "../sub/guide-buy.html"; // Replace with your desired URL
+        }
+
+        function play() {
+            window.location.href = "../sub/start.html"; // Replace with your desired URL
+        }
+
+        function main_webpage() {
+            window.location.href = "../index.html"; // Replace with your desired URL
+        }
+
+        function handleClick() {
+            fetch('http://127.0.0.1:5000/button_clicked', { method: 'POST' })
+                .then(response => response.text())
+                .then(data => console.log(data))
+                .catch(error => console.error(error));
+        }
+
+    </script>
+</head>
+
+
+<body id="main-content">
+<header>
+    <div class="header-logo">
+        <a href="../index.html"><img src="../assets/apm.png" alt="ApostolMine logo"></a>
+    </div>
+    <div class="header-faq">
+        <button onclick="buy()">Как купить товар?</button>
+        <button onclick="tobuy()">Как доплатить привилегию?</button>
+        <button onclick="free()">Как получить бесплатный подарок?</button>
+    </div>
+    <div class="header-checkout">
+        <button onclick="main_webpage()">Корзина →</button>
+    </div>
+</header>
+
+<h3 class="widget-top">Бесплатный подарок на АпостолМайне</h3>
+
+<p class="widget-top">Чтобы получить бесплатный подарок на АпостолМайне вам надо выполнить следующие шаги: </p>
+<p class="widget-top">Зайти в <a class="text" href="https://discord.gg/UVAZQBn8pw"> discord сообщество</a> сервера
+    <br>Зайти в <a class="text" href="https://vk.com/Apostolmine">ВК группу</a> сервера
+    <br> Написать идею что можно обновить или добавить на сервере в соответствующий канал в дискорде
+    <br> После выполненых действий Нажмите на кнопку ниже. Ваша заявка на проверку всех выполненых условий будет отправлена Администрации
+</p>
+
+<button onclick="handleClick()" style="margin-bottom: 100px">Проверить выполненые задания (Может занять до 3х дней, вас пинганут в дискорде по окончании проверки</button>
+
+
+<footer>
+    <br>
+    <p>© ApostolMine 2024. Все права защищены.</p>
+    <p>Все материалы сайта, такие как Картинки, описание доната и другие принадлежат ApostolMine. Задний фон сайта
+        принадлежит проекту
+        <a href="https://skybars.net" target="_blank">Skybars</a>
+    </p>
+    <br>
+    <p> Сейчас вы на сайте гайдов ApostolMine. Наш основной сайт вы можете найти <a href="../index.html">здесь</a></p>
+    <p> Подробнее о политике конфидециальности и условиях использования вы можете узнать <a href="../sub/policy.html">здесь</a></p>
+</footer>
+
+</body>
+</html>

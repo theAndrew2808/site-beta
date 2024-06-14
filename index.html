@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>ApostolMine - Лучший политический сервер Minecraft</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        function free() {
+        window.location.href = "sub/guide-free.html"; // Replace with your desired URL
+        }
+
+        function tobuy() {
+            window.location.href = "sub/guide-doplata.html"; // Replace with your desired URL
+        }
+
+        function buy() {
+            window.location.href = "sub/guide-buy.html"; // Replace with your desired URL
+        }
+
+        function play() {
+            window.location.href = "sub/start.html"; // Replace with your desired URL
+        }
+    </script>
+</head>
+
+
+<body id="main-content">
+<header>
+    <div class="header-logo">
+        <img src="assets/apm.png" alt="ApostolMine logo">
+    </div>
+    <div class="header-faq">
+        <button onclick="buy()">Как купить товар?</button>
+        <button onclick="tobuy()">Как доплатить привилегию?</button>
+        <button onclick="free()">Как получить бесплатный подарок?</button>
+    </div>
+    <div class="header-checkout">
+        <button>Корзина →</button>
+    </div>
+</header>
+
+<div class="widget-top">
+    <h2 class="header-widget-top">ApostolMine</h2>
+    <p class="text-ip-widget-top">IP: mercury.minecraft.rent:25574</p>
+    <button class="play-button-top" onclick="play()">Играть</button>
+
+    <div class="online-widget-top">
+        <p class="online-widget-text-top">Онлайн игроков</p>
+        <p id="online-count" class="online-widget-value-top">Загрузка...</p>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+    </div>
+
+    <button id="scroll-button" class="scroll-button">↓ К товарам</button>
+</div>
+
+<div class="widget-donate" id="products">
+    <h2 class="header-widget-donate">Топ донатеров за последние 6 мес.</h2>
+    <div class="donate-top">
+        <div class="donate-player">
+            <img src="assets/steeve.png" alt="Top buyer #1 head">
+            <p>Игрок</p>
+            <p>Место №1</p>
+        </div>
+        <div class="donate-player">
+            <img src="assets/steeve.png" alt="Top buyer #2 head">
+            <p>Игрок</p>
+            <p>Место №2</p>
+        </div>
+        <div class="donate-player">
+            <img src="assets/steeve.png" alt="Top buyer #3 head">
+            <p>Игрок</p>
+            <p>Место №3</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="widget-products" style="margin-bottom: 1000px">
+    <h2>Наши товары</h2>
+    <div class="product">
+        <img src="assets/light.png" alt="Лайт">
+        <h3>Лайт</h3>
+        <p>от 107 ₽</p>
+        <button class="description-button" data-product-id="3">Инфо</button>
+        <button class="add-to-cart-button">В корзину</button>
+        <div id="product-description-3" class="product-description">
+            <p>Лайт навсегда</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="assets/legend.png" alt="Легенда">
+        <h3>Легенда</h3>
+        <p>от 221 ₽</p>
+        <button class="description-button" data-product-id="2">Инфо</button>
+        <button class="add-to-cart-button">В корзину</button>
+        <div id="product-description-2" class="product-description">
+            <p>Легенда навсегда</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="assets/lord.png" alt="Лорд">
+        <h3>Лорд</h3>
+        <p>от 365 ₽</p>
+        <button class="description-button" data-product-id="1">Инфо</button>
+        <button class="add-to-cart-button">В корзину</button>
+        <div id="product-description-1" class="product-description">
+            <p>Лорд навсегда</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<footer>
+    <br>
+    <p>© ApostolMine 2024. Все права защищены.</p>
+    <p>Все материалы сайта, такие как Картинки, описание доната и другие принадлежат ApostolMine. Задний фон сайта
+        принадлежит проекту
+        <a href="https://skybars.net" target="_blank">Skybars</a>
+    </p>
+    <br>
+    <p> Подробнее о политике конфидециальности и условиях использования вы можете узнать <a href="sub/policy.html">здесь</a>
+    </p>
+
+</footer>
+
+<script src="javascript/script.js"></script>
+
+</body>
+</html>

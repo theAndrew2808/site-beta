@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../assets/fon.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+button {
+    background: #0a5a5a;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+
+
+
+.header-logo img {
+    height: 50px;
+}
+
+#main-content {
+    flex: 1;
+}
+
+/* Media queries for responsive design */
+
+/* For screens smaller than 600px */
+@media (max-width: 599px) {
+    .header-faq button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 479px) {
+    .header-faq button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+
+.header-faq button, .header-checkout button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.header-checkout button {
+    background: #0a5a5a;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.header-checkout button:hover {
+    background: #088888;
+}
+
+.header-faq {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Add this line */
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+
+.widget-top, .widget-donate, .widget-products {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.widget-top a, p {
+    background: transparent;
+    border: none;
+    color: #fff;
+
+}
+
+.widget-top a:hover {
+   color: darkcyan;
+}
+
+.widget-top a:active {
+    background: #2E2E2E;
+}
+
+.widget-top a:visited {
+    color: darkolivegreen;
+}
+
+
+footer {
+    margin: 0;
+    background-color: #333;
+    color: #8e8e8e;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer p, a {
+    margin: 0;
+    background-color: #333;
+    color: #8e8e8e;
+    text-align: center;
+}
+
+
+
